@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Vanilla css */
+
+table {
+    border-collapse: separate;
+    border-spacing: 20px 0;
+  }
+  th {
+    background-color: #4287f5;
+    color: white;
+  }
+  th,
+  td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  h2 {
+    color: #4287f5;
+  }
+
+  #calendar {
+    max-width: 1100px;
+    margin: 40px auto;
+    
+  }
+
+  #calendar{
+   padding: 10% 0;
+    margin: 0 !important;
+  }
+  .fc-time{
+    display:flex;
+  }
+  .fc-center{
+    font-size: 40px;
+  }
+
+
+  /* custome class */
+
+  @layer components{
+    .myshadow{
+      @apply shadow shadow-gray-500/40 hover:shadow-gray-500/40
+    }
+  }
+  
