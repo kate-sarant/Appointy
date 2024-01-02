@@ -5,8 +5,8 @@
 ## Table of contents  🚀
 
   - [Project Setup Guide](#overview)
-  - [The challenge](#the-challenge)
-  - [Setup Instructions](#Setup Instructions)
+  - [The challenge](#The_challenge)
+  - [Setup Instructions](#Setup_Instructions)
   - [Links](#links)
   - [Prerequisites](#Prerequisites)
   - [Author](#author)
@@ -18,16 +18,16 @@ Node.js and npm installed
 Composer installed
 PHP and MySQL installed
 
-### The challenge
+### The_challenge
 
 Users should be able to:
 
-- Login ,logout, Create profile 
-- navigate to Profile page and change the informations
-- Book,change ,delete appointmets 
+- Create profile,Login ,Logout functionality 
+- Navigate to profile page and change the informations
+- Book,Update ,Delete appointmets 
 - Check appointments from Fullcalendar panel
 
-## Setup Instructions 
+## Setup_Instructions 
 
 - Clone the repository:
 
