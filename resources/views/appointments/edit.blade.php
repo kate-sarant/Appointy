@@ -39,7 +39,6 @@
                     <x-text-input 
                     name="date" 
                     :value="@old($appointment->date)"
-                    {{-- {{ $appointment->time }} --}}
                     placeholder="{{ $appointment->date }}"
                     type="date" 
                     placeholder="Date"

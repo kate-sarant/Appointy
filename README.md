@@ -47,9 +47,7 @@ npm install
 composer install
 ```
 
-- Update the .env file with your database credentials:
-
-.env
+- Update the `.env`file with your database credentials:
 
 Copy code
 
