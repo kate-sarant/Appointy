@@ -1,78 +1,117 @@
-# Appointy App
 
-This Appointy app is a simple Laravel application that allows users to book appointments.
+# Appointy - Booking system with Laravel 
 
-## Features
-- Register and login .
-- Users can create, view, and cancel appointments.
-- The app is responsive and works on all devices.
 
-## Prerequisites
+## Table of contents  🚀
+
+  - [Project Setup Guide](#overview)
+  - [The challenge](#the-challenge)
+  - [Setup Instructions](#Setup Instructions)
+  - [Links](#links)
+  - [Prerequisites](#Prerequisites)
+  - [Author](#author)
+
+
+## Project Setup Guide
+Prerequisites
+Node.js and npm installed
+Composer installed
+PHP and MySQL installed
+
+### The challenge
+
+Users should be able to:
+
+- Login ,logout, Create profile 
+- navigate to Profile page and change the informations
+- Book,change ,delete appointmets 
+- Check appointments from Fullcalendar panel
+
+## Setup Instructions 
+
+- Clone the repository:
+
+Copy code
+
+```bash
+git clone https://github.com/kate-sarant/Appointy.git
+cd Appointy
+```
+
+
+- Install dependencies:
+
+Copy code
+```bash
+npm install
+composer install
+```
+
+- Update the .env file with your database credentials:
+
+.env
+
+Copy code
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1 
+DB_PORT=3306
+DB_DATABASE=appointy 
+DB_USERNAME= your_username 
+DB_PASSWORD= your_password
+Run database migrations:
+```
+
+Copy code
+
+```bash
+php artisan migrate
+Seed the database with dummy data:
+```
+
+Copy code
+
+```bash
+php artisan make:factory EventFactory -m 'App\Models\Event'
+php artisan db:seed --class=AppointmentSeeder
+```
+
+- Compile assets:
+
+```bash
+Copy code
+npm run dev
+```
+
+- Start the local development server:
+
+```bash
+Copy code
+php artisan serve
+```
+
+- Access the application in your browser.
+
+#Troubleshooting
+If facing issues, check the Laravel documentation or GitHub repository for solutions.
+Make sure all prerequisites are installed and properly configured.
+
+
+### Links
+
+- GitHub: [Add live site URL here](https://github.com/kate-sarant/Appointy.git)
+
+
+
+### Prerequisites
 
 - PHP 8.0 or higher
 - Composer
 - MySQL database
 
-## Installation
 
-1. Clone the repository:
+## Author
 
-- git clone https://github.com/kate-sarant/Appointy.git
-
-
-2. Navigate to the project directory:
-
--  cd appointy-app
-
-
-3. Install the dependencies:
-
--  npm install 
--  composer install
-
-
-
-4. Create a database and run the migrations:
-
-- .env Update
-
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=appointy
-    DB_USERNAME=root
-    DB_PASSWORD=
-
-- php artisan migrate
-
-
-5. Seed the database with some dummy data:
-
--  php artisan db:seed
-
-
-6. Start the development server:
-
-- php artisan serve
-
-
-## Usage
-
-To use the app, simply visit the `/` route in your browser. You can then create an account and start booking appointments.
-
-## Git Pull
-
-To update your local copy of the app with the latest changes from GitHub, simply run the following command:
-
-git pull
-
-
-This will fetch the latest changes from the remote repository and merge them with your local changes.
-
-## Contributing
-
-Contributions are welcome! Please read the [contributing guidelines](https://github.com/your-username/appointy-app/blob/main/CONTRIBUTING.md) before submitting a pull request.
-
-## License
-
-This project is licensed under the MIT License.
+- Linkedin - linkedin.com/in/aikaterini-sarantopoulou-4b05a51b5
+- GitHub - [kate-sarant] https://github.com/kate-sarant
