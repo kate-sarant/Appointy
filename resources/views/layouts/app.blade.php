@@ -49,7 +49,7 @@
             </main>
         </div>
         <footer>
-           <p class="my-shadow bg-gray-100 text-sm text-gray-500 p-7"> Copyright {{ date('Y') }} Appointy</p>
+           <p class="my-shadow bg-gray-100 text-sm text-gray-500 p-7">&copy; Copyright {{ date('Y') }} Appointy</p>
         </footer>
             </body>
     </body>
