@@ -21,14 +21,15 @@
                                  <x-svg.cross class="cross"></x-svg.cross>  </p>
                                  <p class="mt-[8px] ml-4">Add a New appointment</p>
                             </a>
-                           
-                            @if(Session::has('message'))
-                            <p class="p-2 text-blue-600 uppercase bg-white font-bold"> 
+                            {{-- success message --}}
+                                               
+                            @if(Session::has('success'))
+                            <p class="p-2 text-red-600 uppercase bg-white font-bold "> 
                                {{Session::get('success')}}
-                              
                            </p>  
                                @endif
-                       
+                          
+                                 {{-- success message --}}   
                         </div>
                      <table class="myshadow w-full border-collapse border border-slate-500 border-spacing-2">
                                 <thead class='my-4'>

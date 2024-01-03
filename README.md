@@ -26,6 +26,7 @@ Users should be able to:
 - Navigate to profile page and change the informations
 - Book,Update ,Delete appointmets 
 - Check appointments from Fullcalendar panel
+- Resive email with the appoinment after booking or update
 
 ## Setup_Instructions 
 
@@ -75,6 +76,21 @@ php artisan make:factory EventFactory -m 'App\Models\Event'
 php artisan db:seed --class=AppointmentSeeder
 ```
 
+
+- Mail (Update the mail credentials in the `.env` file )
+
+Copy code
+
+```bash
+MAIL_MAILER=smtp
+MAIL_HOST=
+MAIL_PORT=2525
+MAIL_USERNAME=
+MAIL_PASSWORD=
+
+```
+ ☕️ 👍️ For testing  I utilized mailtrap.io 
+
 - Compile assets:
 
 ```bash
@@ -91,9 +107,13 @@ php artisan serve
 
 - Access the application in your browser.
 
-#Troubleshooting
+
+
+# Troubleshooting
 If facing issues, check the Laravel documentation or GitHub repository for solutions.
 Make sure all prerequisites are installed and properly configured.
+
+
 
 
 ### Links
